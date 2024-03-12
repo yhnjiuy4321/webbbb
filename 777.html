@@ -3,11 +3,13 @@
 <html>
 <head>
     <title>POPCAT CLASSIC</title>
-    <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails">
-
-    <meta charset="UTF-8">
+    <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails"><!--seo讓搜尋優化-->
+    <meta name="description" content="put your description"><!--seo讓搜尋優化-->
+    <meta charset="UTF-8"><!--文件編碼-->
 
     <meta name="msapplication-TileColor" content="#b721ff">
+
+    <!--ios可以看到-->
     <meta name="theme-color" content="#b721ff">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,9 +45,13 @@
         }
 
         .title {
-            margin:2em 0 0 0;
-            width: min(600px,80%);
+            margin:0 0 0 0;
+            width: min(1000px,100%);
+
+        <!--調整標題大小與比例 -->
+
         }
+
 
         .cat-img {
             height:0;
@@ -70,7 +76,7 @@
                 width: min(400px,80%);
             }
             .cat-img {
-                font-size: 40px;
+                font-size: 60px;
                 -webkit-text-stroke-width: 1.5px;
             }
         }
@@ -80,9 +86,12 @@
 </head>
 
 <body>
+
 <img class="title" src="imgs/popcat.svg" alt="POPCAT">
+<!--src路徑，alt文字取代圖片-->
 
 <div class="cat-img" id="p"></div>
+<!--div 容器，class如同印章，可多處蓋印，id是獨一無二的-->
 
 <script>
     /*Preloading alternate cat image*/
